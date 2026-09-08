@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Newsreader', Georgia, 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-display: 'Newsreader', Georgia, 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, .font-serif, .font-display {
+  font-family: var(--font-display);
+}

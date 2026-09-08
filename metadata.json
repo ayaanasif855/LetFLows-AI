@@ -1,0 +1,6 @@
+{
+  "name": "LetFlows AI",
+  "description": "LetFlows AI builds custom AI voice agents, chatbots, and automated lead generation. Stop wasting time on manual tasks and turn missed calls into bookings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
