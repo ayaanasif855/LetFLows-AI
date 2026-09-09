@@ -300,7 +300,7 @@ export const ChatbotsDetail: React.FC<ChatbotsDetailProps> = ({
                       <span className="font-bold text-[#65745E]">Prospect:</span> Hi! Can you send me the price schedule for the multi-system automation audit?
                     </div>
                     <div className="bg-[#191611] p-3 text-[#EFE9DB]">
-                      <span className="font-bold text-[#E8C897]">LetFlows:</span> Right away. I have prepared your customized briefing package based on your team size. Here is your direct calendar link: letflows.ai/audit-intake
+                      <span className="font-bold text-[#E8C897]">LetFlows:</span> Right away. I have prepared your customized briefing package based on your team size. Here is your direct calendar link: letflowsai.com/audit-intake
                     </div>
                   </div>
                 </div>

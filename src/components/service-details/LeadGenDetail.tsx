@@ -57,7 +57,7 @@ const LEAD_GEN_WORKFLOW: LeadGenWorkflowStep[] = [
     name: 'CRM Insertion & Instant Routing',
     tech: 'HubSpot / Salesforce API + Slack Webhook',
     description: 'Prospect automatically injected into target sales pipeline with deduplication checks. Dedicated Slack alert fired to assigned Account Executive within 30 seconds.',
-    payloadExample: `{ "crm_record_created": "lead_91204", "assigned_rep": "sarah.chen@letflows.ai", "slack_alert_status": "dispatched", "latency": "1.4s" }`
+    payloadExample: `{ "crm_record_created": "lead_91204", "assigned_rep": "sarah.chen@letflowsai.com", "slack_alert_status": "dispatched", "latency": "1.4s" }`
   }
 ];
 
