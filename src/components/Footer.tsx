@@ -1,5 +1,5 @@
 import React from 'react';
-import { Workflow, PhoneCall, Bot, Zap, ArrowRight, ShieldCheck } from 'lucide-react';
+import { PhoneCall, Bot, Zap, ArrowRight, ShieldCheck } from 'lucide-react';
 import { PageType } from '../types';
 
 interface FooterProps {
@@ -56,18 +56,25 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenConsultation }
         >
           {/* Brand summary column */}
           <div className="lg:col-span-2">
-            <button
-              type="button"
-              onClick={() => onNavigate('home')}
-              className="flex items-center gap-3 text-left group mb-5 cursor-pointer"
+            <a
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate('home');
+              }}
+              className="flex items-center gap-3 text-left group mb-5 cursor-pointer inline-flex"
             >
-              <div className="w-9 h-9 bg-[#211C16] border border-[rgba(232,200,151,0.25)] flex items-center justify-center text-[#E8C897]">
-                <Workflow className="w-5 h-5 text-[#E8C897]" />
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#F4F1EA] border border-[#DED9CF] flex items-center justify-center p-1.5 shadow-sm group-hover:border-[#E8C897] group-hover:scale-105 transition-all flex-shrink-0">
+                <img
+                  src="/logo.png"
+                  alt="LetFlows AI Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-serif text-2xl sm:text-3xl tracking-tight text-[#EFE9DB]">
                 LetFlows AI<span className="w-1.5 h-1.5 rounded-full bg-[#E8C897] ml-1.5 inline-block" />
               </span>
-            </button>
+            </a>
             
             <p className="text-xs text-[#EFE9DB]/70 font-mono leading-relaxed max-w-sm mb-6">
               Architecting deterministic AI voice systems, conversational chatbots, and automated lead generation engines with n8n and Vapi.

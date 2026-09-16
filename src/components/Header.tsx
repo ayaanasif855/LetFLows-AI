@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Workflow, Menu, X, ArrowRight } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import { PageType } from '../types';
 
 interface HeaderProps {
@@ -50,14 +50,21 @@ export const Header: React.FC<HeaderProps> = ({
           className="w-full bg-[#191611]/90 backdrop-blur-md border border-[rgba(232,200,151,0.2)] rounded-full px-5 sm:px-6 py-2.5 sm:py-3 shadow-2xl flex items-center justify-between transition-all"
         >
           {/* Brand Logo / Mark */}
-          <button
-            type="button"
+          <a
+            href="/"
             id="brand-logo-pill"
-            onClick={() => handleNavClick('home')}
-            className="flex items-center gap-2.5 text-left group cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavClick('home');
+            }}
+            className="flex items-center gap-2.5 sm:gap-3 text-left group cursor-pointer"
           >
-            <div className="w-8 h-8 rounded-full bg-[#211C16] border border-[rgba(232,200,151,0.25)] flex items-center justify-center text-[#E8C897] group-hover:border-[#E8C897] transition-colors">
-              <Workflow className="w-4 h-4 text-[#E8C897]" />
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-[#F4F1EA] border border-[#DED9CF] flex items-center justify-center p-1 shadow-sm group-hover:border-[#E8C897] group-hover:scale-105 transition-all flex-shrink-0">
+              <img
+                src="/logo.png"
+                alt="LetFlows AI Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="flex items-center">
               <span className="font-serif text-lg sm:text-xl tracking-tight text-[#EFE9DB] flex items-center leading-none">
@@ -65,7 +72,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <span className="w-1.5 h-1.5 rounded-full bg-[#E8C897] ml-1.5 inline-block" />
               </span>
             </div>
-          </button>
+          </a>
 
           {/* Desktop Navigation Links: Home, Services, About, Contact ONLY */}
           <div className="hidden md:flex items-center gap-6 lg:gap-8 text-[11px] font-bold uppercase tracking-[0.22em]">
