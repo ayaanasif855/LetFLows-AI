@@ -59,13 +59,11 @@ export const Header: React.FC<HeaderProps> = ({
             }}
             className="flex items-center gap-2.5 sm:gap-3 text-left group cursor-pointer"
           >
-            <div className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center flex-shrink-0">
-              <img
-                src="/logo.png"
-                alt="LetFlows AI Logo"
-                className="w-full h-full object-contain group-hover:scale-105 transition-transform"
-              />
-            </div>
+            <img
+              src="/logo.png"
+              alt="LetFlows AI Logo"
+              className="h-8 sm:h-9 w-auto object-contain group-hover:scale-105 transition-transform flex-shrink-0"
+            />
             <div className="flex items-center">
               <span className="font-serif text-lg sm:text-xl tracking-tight text-[#EFE9DB] flex items-center leading-none">
                 LetFlows AI

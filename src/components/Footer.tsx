@@ -64,13 +64,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenConsultation }
               }}
               className="flex items-center gap-3 text-left group mb-5 cursor-pointer inline-flex"
             >
-              <div className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0">
-                <img
-                  src="/logo.png"
-                  alt="LetFlows AI Logo"
-                  className="w-full h-full object-contain group-hover:scale-105 transition-transform"
-                />
-              </div>
+              <img
+                src="/logo.png"
+                alt="LetFlows AI Logo"
+                className="h-9 sm:h-10 w-auto object-contain group-hover:scale-105 transition-transform flex-shrink-0"
+              />
               <span className="font-serif text-2xl sm:text-3xl tracking-tight text-[#EFE9DB]">
                 LetFlows AI<span className="w-1.5 h-1.5 rounded-full bg-[#E8C897] ml-1.5 inline-block" />
               </span>
