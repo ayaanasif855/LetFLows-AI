@@ -65,7 +65,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenConsultation }
               className="flex items-center gap-3 text-left group mb-5 cursor-pointer inline-flex"
             >
               <img
-                src="/logo.png"
+                src="/logo.svg"
                 alt="LetFlows AI Logo"
                 className="h-9 sm:h-10 w-auto object-contain group-hover:scale-105 transition-transform flex-shrink-0"
               />

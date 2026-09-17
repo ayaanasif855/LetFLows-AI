@@ -60,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
             className="flex items-center gap-2.5 sm:gap-3 text-left group cursor-pointer"
           >
             <img
-              src="/logo.png"
+              src="/logo.svg"
               alt="LetFlows AI Logo"
               className="h-8 sm:h-9 w-auto object-contain group-hover:scale-105 transition-transform flex-shrink-0"
             />
